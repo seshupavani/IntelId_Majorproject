@@ -1,4 +1,4 @@
-# ✈️ Smart Travel Recommendation System
+# ✈️ IntelId - AI Travel Iternary
 
 An AI-powered travel recommendation platform that analyzes user travel queries and provides intelligent transportation suggestions, booking assistance, hotel recommendations, route analysis, and travel insights in real time.
 
