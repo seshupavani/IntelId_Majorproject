@@ -166,4 +166,4 @@ The main objective of this project is to simplify travel planning using artifici
 
 **Kotha Seshupavani**
 
-🔗 GitHub: https://github.com/
+🔗 GitHub:https://github.com/seshupavani/IntelId_Majorproject
