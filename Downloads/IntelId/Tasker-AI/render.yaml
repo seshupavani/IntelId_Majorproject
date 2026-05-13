@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: life-ops-agent
+    env: python
+    rootDir: life-ops-agent
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: WEATHERAPI_KEY
+        sync: false
+      - key: ORS_API_KEY
+        sync: false
+      - key: ROUTING_PROVIDER
+        value: ors
+      - key: ORS_BASE_URL
+        value: https://api.openrouteservice.org
+      - key: ORS_GEOCODE_BASE_URL
+        value: https://api.openrouteservice.org
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: NEWS_API_KEY
+        sync: false
+      - key: AUTH_SECRET
+        sync: false
+      - key: OPENAI_DECISION_MODEL
+        value: gpt-5.2
+      - key: OPENAI_PARSER_MODEL
+        value: gpt-5-mini
+      - key: AQI_BASE_URL
+        value: https://air-quality-api.open-meteo.com/v1/air-quality

@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "installCommand": "cd life-ops-agent/frontend && npm install",
+  "buildCommand": "cd life-ops-agent/frontend && npm run build",
+  "outputDirectory": "life-ops-agent/frontend/dist"
+}
